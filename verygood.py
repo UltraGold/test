@@ -341,7 +341,7 @@ while True:
             #engine.runAndWait()
         elif temp is None and player in online:
             online.remove(player)
-            log.append(player + " online " + eastern.localize((datetime.datetime.now() - datetime.timedelta(seconds=(temp["play_time_in_seconds"])))).strftime("%I:%M%p %a %d %b"))
+            log.append(player + " offline " + (datetime.datetime.now()).strftime("%I:%M%p %a %d %b"))
             #to_file([player, str(datetime.datetime.now())], 0)
             print(player + " offline " + str(datetime.datetime.now()))
     to_file(0, 0)
